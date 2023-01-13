@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<!--Math é para a matematica e o Round é para arrendondar valores como no
+	exemplo media era 3333333 e com o round ficou 33-->
+</body>
+<script>
+
+	var ano = 2016;
+
+	document.write("Flávio tem " + (ano - 1977) + " anos");
+	document.write("<br>");
+	document.write("Joaquim tem " + (ano - 1996) + " anos");
+	document.write("<br>");
+
+	ano = 2017;
+	document.write("Barney tem " + (ano - 1976) + " anos");
+	document.write("<br>");
+	var idadeFlavio = 39;
+	var idadeJoaquim = 20;
+	var idadeBarney = 41;
+
+	var media = (idadeFlavio + idadeJoaquim + idadeBarney) / 3;
+
+	document.write("A media das idades é " + Math.round(media))
+	document.write("<br>");
+
+	var nome = "Flavio";
+
+	document.write("A idade de " + nome + " é " + idadeFlavio);
+</script>
+
+</html>

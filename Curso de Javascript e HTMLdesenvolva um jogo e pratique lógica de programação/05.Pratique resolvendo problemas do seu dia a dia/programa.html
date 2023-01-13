@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>imc</title>
+</head>
+
+<body>
+	<center>
+		<H1>IMC</H1>
+	</center>
+
+</body>
+<script>
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+	function calcularImc(peso, altura) {
+		var imc = peso / (altura ** 2);
+		return imc;
+
+	}
+	//var imcFlavio = calcularImc(73, 1.71);
+	//var imcAmigo = calcularImc(68, 1.72);
+	//mostra(imcFlavio);
+	//mostra(imcAmigo);
+	var nome = prompt("qual é seu nome?");
+	var alturaInformada = prompt(nome + " qual é sua altura?");
+	var pesoInformado = prompt(nome + " qual é seu peso?");
+	var imc = calcularImc(pesoInformado, alturaInformada);
+
+	document.write("<br> A altura informada foi " + alturaInformada);
+	document.write("<br> O peso informado foi " + pesoInformado);
+	document.write("<br>" + nome + ", o seu imc calculado é " + imc);
+
+</script>
+
+</html>
